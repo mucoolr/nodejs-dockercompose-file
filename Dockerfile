@@ -14,4 +14,4 @@ ENV NODE_ENV=test
 
 EXPOSE 51005
 
-CMD [ "npm", "start" ]
+ENTRYPOINT [ "./createmysql.sh","npm","start"] 

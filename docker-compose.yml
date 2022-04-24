@@ -20,11 +20,11 @@ services:
       - 8000:51005
     links:
       - mongodb  
-    depends_on:
-       mysqldb:
-          condition: service_started
-       mongodb:
-          condition: service_started
+    # depends_on:
+      #  mysqldb:
+      #     condition: service_started
+      #  mongodb:
+      #     condition: service_started
 
     tty: true
     restart: unless-stopped
