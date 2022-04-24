@@ -35,3 +35,6 @@ I have create an api.conf file for http to https redirection where i have redire
 To keep the data even if the container destorys , I have created volumes with names db and mongo_db_container which will bind the container data to these folders created in my local.
 
 To wait , till the mysql container launches i have created a createmysql.sh file which halts the backend container for 5S to sleep , till the time mysql container launches and connection is successful.
+
+
+After running `docker compose up`, run `http://localhost/mongo/user` , it will be redirected `https://localhost/mongo/user`
