@@ -37,4 +37,4 @@ To keep the data even if the container destorys , I have created volumes with na
 To wait , till the mysql container launches i have created a createmysql.sh file which halts the backend container for 5S to sleep , till the time mysql container launches and connection is successful.
 
 
-After running `docker compose up`, run `http://localhost/mongo/user` , it will be redirected `https://localhost/mongo/user`
+After running `docker compose up`, run `http://localhost/mongo/user` , it will be redirected to `https://localhost/mongo/user`
